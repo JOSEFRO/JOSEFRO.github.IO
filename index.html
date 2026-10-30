@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d18">
+    <meta property="og:title" content="NEXUS | Soluciones Digitales">
+    <meta property="og:description" content="Tecnología, automatización e inteligencia artificial para llevar tu negocio al siguiente nivel.">
+    <meta property="og:type" content="website">
     <title>NEXUS | JoseFro - Soluciones Digitales</title>
-    <meta name="description" content="NEXUS by JoseFro - Transforma tu negocio con IA, análisis predictivo y automatización. Contacto: josemanuelfrancobrito11@gmail.com">
+    <meta name="description" content="NEXUS by JoseFro: soluciones digitales, desarrollo web, automatización e inteligencia artificial para impulsar tu negocio.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -722,9 +726,32 @@
                 font-size: 1.2rem;
             }
         }
+    /* NEXUS Premium refresh */
+:root { --neon-blue:#62d7ff; --neon-purple:#8b7cff; --neon-pink:#c084fc; --dark-bg:#080d18; --glass:rgba(12,22,40,.78); --card-bg:rgba(15,27,47,.78); --text-secondary:#a8b7cc; --success:#34d399; }
+html { scroll-behavior:smooth; scroll-padding-top:110px; }
+body { background:radial-gradient(ellipse at 15% 8%,rgba(43,112,190,.20),transparent 36%),radial-gradient(ellipse at 88% 32%,rgba(112,77,190,.14),transparent 34%),#080d18; color:#edf5ff; }
+body::before { content:''; position:fixed; inset:0; pointer-events:none; z-index:-1; opacity:.22; background-image:linear-gradient(rgba(150,190,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(150,190,255,.045) 1px,transparent 1px); background-size:48px 48px; mask-image:linear-gradient(to bottom,black,transparent 78%); }
+#canvas-bg { display:none; }
+.skip-link { position:fixed; top:12px; left:12px; z-index:5000; padding:12px 18px; border-radius:10px; background:#eaf6ff; color:#07111f; transform:translateY(-160%); font-weight:700; } .skip-link:focus { transform:translateY(0); }
+nav { width:min(1120px,calc(100% - 36px)); justify-content:space-between; padding:13px 24px; border-radius:18px; background:rgba(8,15,29,.82); border:1px solid rgba(140,190,255,.17); box-shadow:0 18px 55px rgba(0,0,0,.28); animation:none; } nav.scrolled { background:rgba(8,15,29,.96); border-color:rgba(98,215,255,.25); }
+.nav-links { gap:clamp(14px,2.2vw,34px); } nav a { font-size:.92rem; } .logo { letter-spacing:.08em; }
+.hero { min-height:min(900px,100svh); padding:150px 24px 90px; } .hero-content { max-width:980px; } .owner-badge { border-color:rgba(98,215,255,.25); background:rgba(98,215,255,.07); animation:none; }
+.hero h1 { letter-spacing:-.055em; line-height:1.02; } .hero h2 { font-weight:600; letter-spacing:.02em; } .hero p { color:#aebed2; line-height:1.8; }
+.btn { border-radius:13px; padding:15px 25px; font-size:1rem; } .btn-primary { color:#07111f; background:linear-gradient(120deg,#78e0ff,#9c8cff); box-shadow:0 12px 35px rgba(85,166,255,.22); } .btn-primary:hover { box-shadow:0 16px 42px rgba(85,166,255,.34); } .btn-secondary { border:1px solid rgba(173,203,240,.25); background:rgba(255,255,255,.035); }
+.features,.pricing,.contact-section { padding:clamp(72px,9vw,120px) 24px; } .section-title { letter-spacing:-.04em; font-size:clamp(2.1rem,5vw,3.3rem); } .section-subtitle { max-width:680px; margin:0 auto 54px; line-height:1.8; }
+.feature-card,.pricing-card,.contact-card { background:linear-gradient(145deg,rgba(19,34,57,.88),rgba(10,19,34,.82)); border:1px solid rgba(148,183,225,.14); border-radius:20px; box-shadow:0 18px 48px rgba(0,0,0,.16); } .feature-card { cursor:default; }
+.feature-card:hover,.pricing-card:hover,.contact-card:hover { border-color:rgba(98,215,255,.42); box-shadow:0 24px 55px rgba(0,0,0,.25); } .pricing-card.featured { border-color:rgba(98,215,255,.65); box-shadow:0 20px 60px rgba(70,160,255,.12); }
+.contact-card { cursor:pointer; } .contact-card p { overflow-wrap:anywhere; } .modal-content { background:#101c30; border-color:rgba(148,183,225,.2); }
+.form-group input,.form-group textarea,.form-group select { background:#0b1525; border-color:rgba(148,183,225,.2); color:#edf5ff; } .form-group select option { background:#0b1525; color:#edf5ff; }
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible { outline:3px solid #72dfff; outline-offset:3px; } footer { border-top:1px solid rgba(148,183,225,.1); background:linear-gradient(180deg,transparent,rgba(30,75,125,.12)); }
+.social-links a { transition:transform .2s ease,color .2s ease; } .social-links a:hover { transform:translateY(-3px); color:#72dfff; }
+@media (max-width:900px) { nav { top:12px; padding:12px 16px; } .nav-links { gap:14px; } .hero { padding-top:130px; } .pricing-card.featured { transform:none; } }
+@media (max-width:680px) { nav { width:calc(100% - 24px); border-radius:16px; } .nav-links { display:none; position:absolute; top:calc(100% + 10px); left:0; right:0; padding:18px; border:1px solid rgba(148,183,225,.18); border-radius:16px; background:#0b1525; flex-direction:column; align-items:stretch; gap:18px; } .nav-links.active { display:flex; } .menu-toggle { display:block; } .hero { min-height:auto; padding:150px 22px 90px; } .hero h1 { font-size:clamp(2.7rem,14vw,4.4rem); } .hero h2 { font-size:1.18rem; } .hero p { font-size:1.05rem; } .cta-container { gap:12px; } .btn { width:100%; justify-content:center; } .features,.pricing,.contact-section { padding:76px 20px; } .grid,.pricing-grid { grid-template-columns:1fr; gap:18px; } .feature-card,.pricing-card { padding:28px; } .section-title { font-size:2.2rem; } .toast { left:16px; right:16px; bottom:16px; padding:16px; } }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; } .reveal { opacity:1; transform:none; } }
     </style>
 </head>
 <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
 
     <canvas id="canvas-bg"></canvas>
 
@@ -748,14 +775,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="hero-content">
             <div class="owner-badge">
                 <i class="fas fa-code"></i>
                 <span>Desarrollado por <strong>JoseFro</strong></span>
             </div>
             
-            <h1>Transforma tu Negocio con <span class="gradient-text">Inteligencia Artificial</span></h1>
+            <h1 id="hero-title">Transforma tu Negocio con <span class="gradient-text">Inteligencia Artificial</span></h1>
             
             <h2>Jose Manuel Franco Brito - Desarrollador Full Stack</h2>
             
@@ -765,7 +792,7 @@
                 <button class="btn btn-primary" onclick="openModal('consulta')">
                     <i class="fas fa-rocket"></i> Consulta Gratis
                 </button>
-                <a href="https://wa.me/18499129296" target="_blank" class="btn btn-whatsapp">
+                <a href="https://wa.me/18492529296" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
                     <i class="fab fa-whatsapp"></i> WhatsApp Directo
                 </a>
                 <button class="btn btn-secondary" onclick="scrollToSection('precios')">
@@ -906,10 +933,10 @@
                 <p>josemanuelfrancobrito11@gmail.com</p>
             </a>
             
-            <a href="https://wa.me/18499129296" target="_blank" class="contact-card">
+            <a href="https://wa.me/18492529296" target="_blank" rel="noopener noreferrer" class="contact-card">
                 <i class="fab fa-whatsapp"></i>
                 <h3>WhatsApp</h3>
-                <p>+1 (849) 912-9296</p>
+                <p>+1 (849) 252-9296</p>
             </a>
             
             <div class="contact-card" onclick="openModal('consulta')">
@@ -940,13 +967,13 @@
                 <a href="mailto:josemanuelfrancobrito11@gmail.com" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="https://wa.me/18499129296" target="_blank" title="WhatsApp">
+                <a href="https://wa.me/18492529296" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
                 <a href="#" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" title="GitHub">
+                <a href="https://github.com/JOSEFRO" target="_blank" rel="noopener noreferrer" title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="#" title="Instagram">
@@ -961,7 +988,7 @@
                     <strong>Jose Manuel Franco Brito (JoseFro)</strong>
                 </p>
                 <p style="margin-top: 5px; font-size: 0.8rem;">
-                    <i class="fas fa-phone"></i> +1 (849) 912-9296 | 
+                    <i class="fas fa-phone"></i> +1 (849) 252-9296 | 
                     <i class="fas fa-envelope"></i> josemanuelfrancobrito11@gmail.com
                 </p>
             </div>
@@ -1261,9 +1288,9 @@
                     `*Mensaje:*%0A${formData.message}`;
 
                 // Open WhatsApp with pre-filled message
-                window.open(`https://wa.me/18499129296?text=${whatsappMessage}`, '_blank');
+                window.open(`https://wa.me/18492529296?text=${whatsappMessage}`, '_blank');
                 
-                showToast('¡Formulario enviado! Redirigiendo a WhatsApp...');
+                showToast('WhatsApp se abrirá con tu consulta lista para enviar.');
                 closeModal();
             }
         }
