@@ -53,12 +53,13 @@
     ].join("\n");
 
     const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
-    const opened = window.open(url, "_blank", "noopener,noreferrer");
+    const opened = window.open(url, "_blank");
     if (!opened) {
       feedback.textContent = "Tu navegador bloqueó la ventana. Puedes escribir directamente al WhatsApp +1 (849) 252-9296.";
       return;
     }
-    feedback.textContent = "WhatsApp se abrió con tu mensaje preparado. Revísalo y pulsa Enviar allí.";
+    opened.opener = null;
+    feedback.textContent = "WhatsApp se abrió con tu mensaje preparado. Revísalo y pulsa Enviar allí."
     form.reset();
   });
 })();
