@@ -67,3 +67,40 @@ a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.
 }
 @media(max-width:380px){.hero-editorial,.hero-stage{min-height:840px}.hero-bottom-grid{padding-top:420px}.hero-topline{font-size:.4rem}.hero-portrait{width:70vw;height:85vw}.hero-role h1{font-size:3.1rem}.contact-direct a{font-size:.68rem}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal-ready .service-card,.reveal-ready .project-card,.reveal-ready .step,.reveal-ready .intro-grid,.reveal-ready .section-top{opacity:1;transform:none}}
+
+
+/* NEXUS / IMMERSIVE INTERACTION LAYER — 2026 */
+:root{--nexus-glow:rgba(105,226,231,.22);--nexus-ease:cubic-bezier(.2,.75,.2,1)}
+html{scrollbar-color:#315c78 #080b12}
+::selection{background:#69e2e7;color:#071018}
+.hero-editorial{isolation:isolate}
+.hero-editorial:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse at var(--pointer-x,50%) var(--pointer-y,42%),rgba(105,226,231,.105),transparent 32%);opacity:.8;transition:opacity .4s}
+.hero-stage{z-index:1}
+.hero-main-card{transform:translate(-50%,-47%) rotateY(var(--hero-rotate-y,0deg)) rotateX(var(--hero-rotate-x,0deg));transform-style:preserve-3d;transition:transform .65s var(--nexus-ease),box-shadow .5s;will-change:transform}
+.hero-main-card:hover{box-shadow:0 42px 120px #000a,0 0 90px rgba(105,226,231,.2)}
+.hero-card-content{transform:translateZ(26px)}
+.hero-card-orbit-one{animation:nexus-orbit-a 24s linear infinite}
+.hero-card-orbit-two{animation:nexus-orbit-b 31s linear infinite}
+.hero-card-grid{animation:nexus-grid-breathe 9s ease-in-out infinite alternate}
+.hero-robot{transform:translateY(8%) translate3d(var(--robot-x,0px),var(--robot-y,0px),0);transition:transform .45s var(--nexus-ease)}
+.hero-role h1{ text-wrap:balance }
+.button-primary{position:relative;overflow:hidden;box-shadow:0 12px 32px rgba(105,226,231,.13);transition:transform .3s var(--nexus-ease),box-shadow .3s}
+.button-primary:before{content:"";position:absolute;inset:-1px;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.28) 48%,transparent 70%);transform:translateX(-120%);transition:transform .7s}
+.button-primary:hover:before{transform:translateX(120%)}
+.button-primary:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(105,226,231,.22)}
+.project-card{transform-style:preserve-3d;transition:transform .45s var(--nexus-ease),border-color .35s,box-shadow .35s}
+.project-image img{transition:transform .8s var(--nexus-ease),filter .5s}
+.project-card:hover .project-image img{transform:scale(1.045);filter:saturate(1.12)}
+.service-card,.project-card,.step{backface-visibility:hidden}
+.site-header{transition:background .35s,border-color .35s,box-shadow .35s}
+.site-header.is-scrolled{box-shadow:0 12px 35px #0003}
+.nav-menu a:not(.nav-cta){position:relative}
+.nav-menu a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:var(--cyan);transition:right .25s}
+.nav-menu a:not(.nav-cta):hover:after{right:0}
+.nexus-scroll-progress{position:fixed;z-index:150;top:0;left:0;width:100%;height:2px;pointer-events:none;background:linear-gradient(90deg,var(--cyan),var(--blue));transform:scaleX(0);transform-origin:left;box-shadow:0 0 14px rgba(105,226,231,.55)}
+@keyframes nexus-orbit-a{to{transform:translate(-50%,-50%) rotate(336deg)}}
+@keyframes nexus-orbit-b{to{transform:translate(-50%,-50%) rotate(-305deg)}}
+@keyframes nexus-grid-breathe{from{opacity:.18}to{opacity:.38}}
+@media(max-width:900px){.hero-main-card{transform:translate(-50%,-47%)}.hero-main-card:hover{box-shadow:0 35px 90px #0009,0 0 55px rgba(105,226,231,.12)}}
+@media(max-width:560px){.hero-main-card{transform:translate(-50%,-47%)}.hero-card-content{padding:14px}.hero-card-symbol{font-size:clamp(7rem,32vw,9rem)}.hero-robot{opacity:.82}}
+@media(prefers-reduced-motion:reduce){.hero-card-orbit-one,.hero-card-orbit-two,.hero-card-grid{animation:none!important}.hero-main-card,.hero-robot,.button-primary,.project-card,.project-image img{transition:none!important}.hero-main-card{transform:translate(-50%,-47%)!important}.nexus-scroll-progress{display:none}}
