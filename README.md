@@ -22,7 +22,7 @@ La ilustración incluida en `assets/images/` es una maqueta visual de referencia
 
 ## Cómo visitar el sitio
 
-1. Abre el enlace de GitHub Pages: [josefro.github.io](https://josefro.github.io/JOSEFRO.github.IO/).
+1. Abre el enlace de GitHub Pages: [josefro.github.io](https://josefro.github.io/).
 2. Entra en las secciones desde el menú superior.
 3. Usa el enlace de contacto para preparar un mensaje de WhatsApp.
 4. Revisa el texto y envíalo desde WhatsApp si estás de acuerdo.
@@ -39,7 +39,7 @@ No necesitas instalar Node.js para visualizar la versión publicada.
 
 ## Desarrollo local
 
-Puedes abrir `index.html` directamente. Para simular un servidor local, abre una terminal en la carpeta del proyecto y ejecuta:
+Para una vista más fiel a GitHub Pages, inicia un servidor local desde la carpeta del proyecto:
 
 ```bash
 python -m http.server 8000
@@ -67,6 +67,8 @@ Luego visita `http://localhost:8000`.
 ```
 
 ## Contacto
+
+El formulario prepara un mensaje y abre WhatsApp; no existe un backend ni se almacenan los datos en este sitio.
 
 - WhatsApp: **+1 (849) 252-9296**
 - Correo: **josemanuelfrancobrito11@gmail.com**
