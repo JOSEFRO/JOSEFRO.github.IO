@@ -62,7 +62,11 @@
       return;
     }
     if (feedback) feedback.textContent = "WhatsApp se abrió con tu mensaje preparado. Revísalo y pulsa Enviar allí.";
-    form.reset();
+    // Keep the form values so the visitor can return from WhatsApp and edit the message if needed.
+  });
+
+  document.querySelectorAll(".service-visual img").forEach(img => {
+    img.addEventListener("error", () => { img.style.display = "none"; }, { once: true });
   });
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
