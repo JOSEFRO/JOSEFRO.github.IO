@@ -11,14 +11,16 @@
 ## Características
 
 - Diseño responsive para móviles, tabletas y escritorio.
-- Secciones de presentación, soluciones, metodología y contacto.
+- Secciones de perfil, áreas de desarrollo, proyectos, proceso y contacto.
+- Fotografías temáticas por área con carga diferida y tratamiento visual oscuro.
 - Contacto mediante WhatsApp, sin backend ni base de datos.
 - Metadatos básicos para compartir y motores de búsqueda.
 - Sitio estático: no requiere instalación de dependencias.
+- El contenido describe áreas de estudio y proyectos; no presenta como experiencia certificada aquello que está en aprendizaje.
 
 ## Vista previa
 
-La ilustración incluida en `assets/images/` es una maqueta visual de referencia del diseño; no es una captura de una sesión real del navegador.
+La imagen de `assets/images/nexus-portfolio-preview.svg` es una ilustración conceptual alineada con la identidad visual del portafolio; no representa una captura literal del navegador. Las fotografías de las tarjetas son referencias visuales remotas servidas por Unsplash.
 
 ## Cómo visitar el sitio
 
