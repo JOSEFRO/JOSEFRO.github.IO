@@ -6,7 +6,7 @@
 
 **Portafolio personal de José Manuel Franco Brito** para presentar proyectos, soluciones digitales y experiencia técnica.
 
-[Visitar sitio web](https://josefro.github.io/JOSEFRO.github.IO/) · [Reportar un problema](https://github.com/JOSEFRO/JOSEFRO.github.IO/issues)
+[Visitar sitio web](https://josefro.github.io/) · [Reportar un problema](https://github.com/JOSEFRO/JOSEFRO.github.IO/issues)
 
 ## Características
 
