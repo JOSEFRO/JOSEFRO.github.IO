@@ -91,4 +91,47 @@
       card.addEventListener("pointerleave", () => { card.style.transform = ""; });
     });
   }
+  // Progress indicator and lightweight hero parallax (no external runtime).
+  const progress = document.createElement("div");
+  progress.className = "nexus-scroll-progress";
+  progress.setAttribute("aria-hidden", "true");
+  document.body.appendChild(progress);
+  let progressTicking = false;
+  const updateProgress = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.transform = "scaleX(" + (max > 0 ? Math.min(1, window.scrollY / max) : 0) + ")";
+    progressTicking = false;
+  };
+  window.addEventListener("scroll", () => {
+    if (!progressTicking) {
+      progressTicking = true;
+      window.requestAnimationFrame(updateProgress);
+    }
+  }, { passive: true });
+  updateProgress();
+
+  const hero = document.querySelector(".hero-editorial");
+  const heroCard = document.querySelector(".hero-main-card");
+  if (hero && heroCard && !reduceMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    hero.addEventListener("pointermove", event => {
+      const rect = hero.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width;
+      const y = (event.clientY - rect.top) / rect.height;
+      hero.style.setProperty("--pointer-x", (x * 100).toFixed(1) + "%");
+      hero.style.setProperty("--pointer-y", (y * 100).toFixed(1) + "%");
+      heroCard.style.setProperty("--hero-rotate-y", ((x - .5) * 5).toFixed(2) + "deg");
+      heroCard.style.setProperty("--hero-rotate-x", ((.5 - y) * 4).toFixed(2) + "deg");
+      hero.style.setProperty("--robot-x", ((x - .5) * 9).toFixed(1) + "px");
+      hero.style.setProperty("--robot-y", ((y - .5) * 7).toFixed(1) + "px");
+    });
+    hero.addEventListener("pointerleave", () => {
+      heroCard.style.setProperty("--hero-rotate-y", "0deg");
+      heroCard.style.setProperty("--hero-rotate-x", "0deg");
+      hero.style.setProperty("--pointer-x", "50%");
+      hero.style.setProperty("--pointer-y", "42%");
+      hero.style.setProperty("--robot-x", "0px");
+      hero.style.setProperty("--robot-y", "0px");
+    });
+  }
+
 })();
