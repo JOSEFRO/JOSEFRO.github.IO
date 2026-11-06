@@ -104,3 +104,18 @@ html{scrollbar-color:#315c78 #080b12}
 @media(max-width:900px){.hero-main-card{transform:translate(-50%,-47%)}.hero-main-card:hover{box-shadow:0 35px 90px #0009,0 0 55px rgba(105,226,231,.12)}}
 @media(max-width:560px){.hero-main-card{transform:translate(-50%,-47%)}.hero-card-content{padding:14px}.hero-card-symbol{font-size:clamp(7rem,32vw,9rem)}.hero-robot{opacity:.82}}
 @media(prefers-reduced-motion:reduce){.hero-card-orbit-one,.hero-card-orbit-two,.hero-card-grid{animation:none!important}.hero-main-card,.hero-robot,.button-primary,.project-card,.project-image img{transition:none!important}.hero-main-card{transform:translate(-50%,-47%)!important}.nexus-scroll-progress{display:none}}
+
+
+/* Section imagery and editorial profile details */
+.profile-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.profile-tags span{padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:#0e1826;color:#aebdd0;font:500 10px/1.2 "DM Mono",monospace;letter-spacing:.08em}
+.service-card{position:relative;overflow:hidden;padding-top:0}
+.service-visual{height:142px;margin:0 -24px 20px;overflow:hidden;position:relative;background:#0d1725}
+.service-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(8,11,18,.85) 100%),linear-gradient(90deg,rgba(8,11,18,.25),transparent)}
+.service-visual img{width:100%;height:100%;display:block;object-fit:cover;filter:saturate(.72) contrast(1.06);transition:transform .7s var(--nexus-ease),filter .5s}
+.service-card:hover .service-visual img{transform:scale(1.07);filter:saturate(1.05) contrast(1.04)}
+.service-card .service-number{position:absolute;top:16px;right:18px;z-index:2;text-shadow:0 2px 10px #000}
+.service-card .service-icon{margin-top:-43px;position:relative;z-index:2;border:1px solid rgba(105,226,231,.28);box-shadow:0 8px 24px #0007}
+.service-card h3{position:relative;z-index:1}
+@media(max-width:640px){.service-visual{height:128px;margin-inline:-18px}.profile-tags span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.service-visual img{transition:none!important}}
