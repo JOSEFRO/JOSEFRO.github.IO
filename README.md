@@ -1,26 +1,55 @@
-# NEXUS — Sitio web
+# NEXUS — Portafolio tecnológico
 
-Sitio web estático de NEXUS, publicado mediante GitHub Pages.
+<p align="center">
+  <img src="assets/images/nexus-portfolio-preview.svg" alt="Vista conceptual del portafolio NEXUS" width="100%">
+</p>
+
+**Portafolio personal de José Manuel Franco Brito** para presentar proyectos, soluciones digitales y experiencia técnica.
+
+[Visitar sitio web](https://josefro.github.io/JOSEFRO.github.IO/) · [Reportar un problema](https://github.com/JOSEFRO/JOSEFRO.github.IO/issues)
 
 ## Características
 
-- Diseño adaptable a móviles, tabletas y escritorio.
-- Navegación móvil accesible.
+- Diseño responsive para móviles, tabletas y escritorio.
 - Secciones de presentación, soluciones, metodología y contacto.
-- Formulario validado en el navegador que prepara una consulta en WhatsApp.
+- Contacto mediante WhatsApp, sin backend ni base de datos.
 - Metadatos básicos para compartir y motores de búsqueda.
-- Sin base de datos, sin backend y sin dependencias de instalación.
+- Sitio estático: no requiere instalación de dependencias.
 
-## Contacto
+## Vista previa
 
-- WhatsApp: **+1 (849) 252-9296**
-- Correo: josemanuelfrancobrito11@gmail.com
+La ilustración incluida en `assets/images/` es una maqueta visual de referencia del diseño; no es una captura de una sesión real del navegador.
 
-El formulario no almacena información ni la envía a un servidor. Los datos se incorporan a un mensaje mediante el enlace oficial de WhatsApp; la persona puede revisarlo antes de enviarlo.
+## Cómo visitar el sitio
+
+1. Abre el enlace de GitHub Pages: [josefro.github.io](https://josefro.github.io/JOSEFRO.github.IO/).
+2. Entra en las secciones desde el menú superior.
+3. Usa el enlace de contacto para preparar un mensaje de WhatsApp.
+4. Revisa el texto y envíalo desde WhatsApp si estás de acuerdo.
+
+## Cómo descargar el código
+
+1. Abre este repositorio en GitHub.
+2. Pulsa el botón **Code**.
+3. Selecciona **Download ZIP**.
+4. Extrae el archivo ZIP en tu equipo.
+5. Abre `index.html` en un navegador moderno.
+
+No necesitas instalar Node.js para visualizar la versión publicada.
+
+## Desarrollo local
+
+Puedes abrir `index.html` directamente. Para simular un servidor local, abre una terminal en la carpeta del proyecto y ejecuta:
+
+```bash
+python -m http.server 8000
+```
+
+Luego visita `http://localhost:8000`.
 
 ## Estructura
 
-```
+```text
 .
 ├── index.html
 ├── README.md
@@ -30,25 +59,20 @@ El formulario no almacena información ni la envía a un servidor. Los datos se 
 ├── assets/
 │   ├── css/styles.css
 │   ├── js/main.js
-│   └── favicon.svg
+│   ├── favicon.svg
+│   └── images/
+│       └── nexus-portfolio-preview.svg
 └── docs/
     └── PROJECT-STRUCTURE.md
 ```
 
-## Desarrollo local
+## Contacto
 
-Abre `index.html` directamente en un navegador. No requiere Node.js, compilación ni instalación de paquetes.
+- WhatsApp: **+1 (849) 252-9296**
+- Correo: **josemanuelfrancobrito11@gmail.com**
 
-## Publicación
+El formulario no almacena información ni la envía a un servidor. Los datos se incorporan a un mensaje mediante WhatsApp y la persona puede revisarlo antes de enviarlo.
 
-El repositorio está preparado para GitHub Pages desde la rama `main` y la raíz del repositorio. Después de cada actualización, GitHub Pages publica los cambios cuando termina su proceso de despliegue.
+## Licencia
 
-## Personalización
-
-- Cambia el número de WhatsApp en `assets/js/main.js` (constante `WHATSAPP_NUMBER`).
-- Cambia el correo y los textos de contacto en `index.html`.
-- Edita colores, tipografía y espaciados en `assets/css/styles.css`.
-
-## Estado del proyecto
-
-La web es una presentación comercial estática. No incluye autenticación, pagos, panel privado, almacenamiento de formularios ni integraciones de servidor.
+Este repositorio es un proyecto personal. Consulta al propietario antes de reutilizar marcas, textos o recursos visuales.
