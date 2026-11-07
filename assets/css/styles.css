@@ -119,3 +119,7 @@ html{scrollbar-color:#315c78 #080b12}
 .service-card h3{position:relative;z-index:1}
 @media(max-width:640px){.service-visual{height:128px;margin-inline:-18px}.profile-tags span{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.service-visual img{transition:none!important}}
+
+/* JOSEFRO responsive brand system */
+.josefro-nav-logo{display:block;width:clamp(145px,17vw,205px);height:auto;max-height:58px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(47,143,255,.22));transition:transform .3s ease,filter .3s ease}.brand:hover .josefro-nav-logo{transform:translateY(-2px);filter:drop-shadow(0 10px 24px rgba(76,178,255,.42))}.brand-context{margin-left:-5px;color:#8ea7c8;font:600 .58rem var(--mono);letter-spacing:.18em}.brand{gap:13px}@media(max-width:600px){.josefro-nav-logo{width:145px;max-height:44px}.brand-context{font-size:.5rem}}
+@media(prefers-reduced-motion:reduce){.josefro-nav-logo,.brand:hover .josefro-nav-logo{transition:none;transform:none}}
