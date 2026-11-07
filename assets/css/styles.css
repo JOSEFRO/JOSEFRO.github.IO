@@ -123,3 +123,8 @@ html{scrollbar-color:#315c78 #080b12}
 /* JOSEFRO responsive brand system */
 .josefro-nav-logo{display:block;width:clamp(145px,17vw,205px);height:auto;max-height:58px;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(47,143,255,.22));transition:transform .3s ease,filter .3s ease}.brand:hover .josefro-nav-logo{transform:translateY(-2px);filter:drop-shadow(0 10px 24px rgba(76,178,255,.42))}.brand-context{margin-left:-5px;color:#8ea7c8;font:600 .58rem var(--mono);letter-spacing:.18em}.brand{gap:13px}@media(max-width:600px){.josefro-nav-logo{width:145px;max-height:44px}.brand-context{font-size:.5rem}}
 @media(prefers-reduced-motion:reduce){.josefro-nav-logo,.brand:hover .josefro-nav-logo{transition:none;transform:none}}
+
+/* Electric motion for the JOSEFRO 3D brand mark */
+.josefro-nav-logo{animation:jf-electric 3.8s ease-in-out infinite;transform-origin:50% 50%}
+@keyframes jf-electric{0%,100%{filter:drop-shadow(0 0 5px rgba(20,202,255,.22)) drop-shadow(0 7px 16px rgba(64,118,255,.18));}45%{filter:drop-shadow(0 0 9px rgba(20,202,255,.58)) drop-shadow(0 0 22px rgba(91,112,255,.4)) brightness(1.08);}49%{filter:drop-shadow(0 0 15px rgba(132,245,255,.9)) drop-shadow(0 0 28px rgba(75,117,255,.72)) brightness(1.2);}53%{filter:drop-shadow(0 0 5px rgba(20,202,255,.28)) drop-shadow(0 7px 16px rgba(64,118,255,.2));}}
+@media(prefers-reduced-motion:reduce){.josefro-nav-logo{animation:none}}
