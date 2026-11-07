@@ -1,35 +1,63 @@
-# JOSEFRO — Portafolio tecnológico
+<div align="center">
 
-Portafolio personal para presentar proyectos, experimentos y formación técnica de forma clara, verificable y accesible.
+<img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
 
-**Sitio publicado:** https://josefro.github.io/
+# JOSEFRO · Portafolio tecnológico
 
-## Enfoque
-- Identidad principal: JOSEFRO. NEXUS se reserva como marca del producto de escritorio NEXUS PC CONTROL.
-- Proyectos destacados con enlaces a demos, repositorios y documentación.
-- Perfil honesto: diferencia formación, prácticas y productos en desarrollo de experiencia profesional acreditada.
-- Contacto directo por WhatsApp, sin backend ni base de datos.
-- Diseño estático, responsive y sin instalación para visitantes.
+**Desarrollo web · Redes y seguridad · Automatización · Laboratorios prácticos**
 
-## Proyectos
-- **BRIFAN TECH:** plataforma web comunitaria que se utiliza desde el navegador.
-- **NEXUS PC CONTROL:** prototipo local de diagnóstico y mantenimiento prudente para Windows.
-- **JOSEFRO Portfolio:** sitio personal de presentación.
+[🌐 Abrir portafolio](https://josefro.github.io/) · [📂 Ver repositorios](https://github.com/JOSEFRO?tab=repositories) · [✉️ Contacto](mailto:josemanuelfrancobrito11@gmail.com)
 
-## Tecnología
-HTML semántico, CSS y JavaScript nativo. No requiere Node.js ni instalación para visitar el sitio.
+</div>
+
+## Sobre este espacio
+
+JOSEFRO es el portafolio de José Manuel Franco Brito. Reúne proyectos personales, prácticas técnicas y experimentos de desarrollo. Su objetivo es que cualquier visitante pueda entender rápidamente **qué hace cada proyecto, para quién sirve, cómo se utiliza y cuál es su estado real**.
+
+> La formación, las prácticas y los productos en desarrollo se presentan por separado. No se anuncian como experiencia profesional ni como funciones terminadas aquellas que todavía no han sido verificadas.
+
+## Ecosistema de proyectos
+
+<img src="docs/visuals/project-map.svg" alt="Mapa visual de los tres proyectos JOSEFRO, BRIFAN TECH y NEXUS PC CONTROL" width="100%">
+
+| Proyecto | Qué resuelve | Cómo se utiliza |
+|---|---|---|
+| [BRIFAN TECH](https://josefro.github.io/BRIFAN-TECH/) | Plataforma web para explorar y compartir conocimiento tecnológico. | Desde el navegador; no requiere instalación. |
+| [NEXUS PC CONTROL](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) | Panel local para consultar información del equipo Windows. | Se ejecuta en el propio PC y abre una interfaz local. |
+| [JOSEFRO Portfolio](https://josefro.github.io/) | Presenta proyectos, formación y áreas de práctica. | Sitio estático público. |
+
+## Áreas de trabajo
+
+- **Redes:** direccionamiento IP, VLAN, switching y laboratorios de conectividad.
+- **Seguridad informática:** fundamentos, prácticas de análisis y aprendizaje responsable.
+- **Desarrollo web:** interfaces responsive, accesibilidad y experiencias interactivas.
+- **Automatización:** herramientas que simplifican tareas y presentan información útil.
+
+## Criterios de diseño y calidad
+
+- Identidad visual coherente y diferenciada para cada producto.
+- Diseño adaptable a móviles, tabletas y escritorio.
+- Navegación por teclado, estructura semántica y respeto a la preferencia de movimiento reducido.
+- Documentación visual: propósito, flujo de uso, tecnologías, requisitos y limitaciones.
+- Estados de proyecto transparentes: en desarrollo, probado o publicado según evidencia.
 
 ## Desarrollo local
+
+Este portafolio es estático y no requiere instalar dependencias para visitarlo.
+
 ```bash
 python -m http.server 8000
 ```
+
 Abre `http://localhost:8000`.
 
-## Accesibilidad, rendimiento y mantenimiento
-Se priorizan navegación por teclado, enlaces descriptivos, imágenes diferidas, movimiento reducido cuando el sistema lo solicita y una estructura ligera. Los objetivos de rendimiento se deben validar con mediciones reales (Core Web Vitals), no asumir por el diseño.
-
 ## Contacto
-- WhatsApp: +1 (849) 252-9296
-- Correo: josemanuelfrancobrito11@gmail.com
 
-El formulario prepara el mensaje y permite revisarlo en WhatsApp; el sitio no almacena ni envía esos datos a un servidor.
+- Correo: josemanuelfrancobrito11@gmail.com
+- WhatsApp: +1 (849) 252-9296
+
+El enlace de contacto abre una conversación para que la persona revise y envíe su mensaje. El sitio no almacena esos datos en una base de datos.
+
+## Licencia
+
+No se ha añadido una licencia de reutilización. El código y los recursos permanecen reservados a su propietario salvo autorización expresa.
