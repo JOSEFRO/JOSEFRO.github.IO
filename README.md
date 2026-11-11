@@ -4,50 +4,55 @@
 
 # JOSEFRO · Portafolio tecnológico
 
-**Desarrollo web · Redes y seguridad · Automatización · Laboratorios prácticos**
+**Desarrollo web · Redes y seguridad · Automatización · Herramientas digitales**
 
-[🌐 Abrir portafolio](https://josefro.github.io/) · [📂 Ver repositorios](https://github.com/JOSEFRO?tab=repositories) · [✉️ Contacto](mailto:josemanuelfrancobrito11@gmail.com)
+[🌐 Abrir portafolio](https://josefro.github.io/) · [📂 Explorar GitHub](https://github.com/JOSEFRO?tab=repositories) · [✉️ Contacto](mailto:josemanuelfrancobrito11@gmail.com)
 
 </div>
 
-## Sobre este espacio
+## Perfil
 
-JOSEFRO es el portafolio de José Manuel Franco Brito. Reúne proyectos personales, prácticas técnicas y experimentos de desarrollo. Su objetivo es que cualquier visitante pueda entender rápidamente **qué hace cada proyecto, para quién sirve, cómo se utiliza y cuál es su estado real**.
+Soy José Manuel Franco Brito y utilizo JOSEFRO para presentar proyectos personales, prácticas técnicas y experimentos de desarrollo. Me interesa construir herramientas útiles, documentar cómo funcionan y mejorar su calidad mediante pruebas e iteraciones.
 
-> La formación, las prácticas y los productos en desarrollo se presentan por separado. No se anuncian como experiencia profesional ni como funciones terminadas aquellas que todavía no han sido verificadas.
+Actualmente estudio Redes y Seguridad Informática en Loyola IEESL. Mi formación complementaria confirmada incluye Redes Básicas de Canoa Academy y NSE 3. Este portafolio diferencia la formación en curso, los laboratorios personales y los productos que todavía están en desarrollo.
 
-## Ecosistema de proyectos
+## Proyectos principales
 
-<img src="docs/visuals/project-map.svg" alt="Mapa visual de los tres proyectos JOSEFRO, BRIFAN TECH y NEXUS PC CONTROL" width="100%">
-
-| Proyecto | Qué resuelve | Cómo se utiliza |
+| Proyecto | Descripción | Acceso |
 |---|---|---|
-| [BRIFAN TECH](https://josefro.github.io/BRIFAN-TECH/) | Plataforma web para explorar y compartir conocimiento tecnológico. | Desde el navegador; no requiere instalación. |
-| [NEXUS PC CONTROL](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) | Panel local para consultar información del equipo Windows. | Se ejecuta en el propio PC y abre una interfaz local. |
-| [JOSEFRO Portfolio](https://josefro.github.io/) | Presenta proyectos, formación y áreas de práctica. | Sitio estático público. |
+| **BRIFAN TECH** | Plataforma web para explorar guías, recursos y publicaciones tecnológicas. Se utiliza desde el navegador; no requiere instalación. | [Abrir web](https://josefro.github.io/BRIFAN-TECH/) · [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
+| **NEXUS PC CONTROL** | Aplicación local para Windows que consulta recursos del sistema y analiza almacenamiento desde el propio equipo. | [Repositorio](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
+| **JOSEFRO Portfolio** | Sitio personal que presenta proyectos, formación, áreas de práctica y vías de contacto. | [Abrir portafolio](https://josefro.github.io/) · [Código](https://github.com/JOSEFRO/JOSEFRO.github.IO) |
 
-## Áreas de trabajo
+## Áreas de aprendizaje y construcción
 
-- **Redes:** direccionamiento IP, VLAN, switching y laboratorios de conectividad.
-- **Seguridad informática:** fundamentos, prácticas de análisis y aprendizaje responsable.
-- **Desarrollo web:** interfaces responsive, accesibilidad y experiencias interactivas.
-- **Automatización:** herramientas que simplifican tareas y presentan información útil.
+- **Redes y conectividad:** direccionamiento IP, VLAN, switching, topologías y laboratorios.
+- **Seguridad informática:** fundamentos, buenas prácticas y ejercicios en entornos propios o autorizados.
+- **Desarrollo web:** HTML, CSS, JavaScript, React y TypeScript.
+- **Automatización y sistemas:** scripts, diagnóstico local y presentación de datos.
+- **Inteligencia artificial:** exploración de herramientas y flujos asistidos por IA.
 
-## Actualización visual 2026
+## Cómo trabajo
 
-La rama `feat/josefro-violet-editorial-redesign` introduce una dirección editorial oscura con acentos violeta, fondos geométricos sutiles y ajustes de navegación, hero, botones y tarjetas. Conserva el logotipo y el contenido existentes. La hoja de estilos se ha actualizado en una propuesta de integración; todavía falta revisar visualmente GitHub Pages en escritorio y móvil. No se ha publicado este rediseño.
+1. Identifico un problema o una oportunidad de mejora.
+2. Investigo herramientas y alternativas técnicas.
+3. Construyo una versión funcional y documentada.
+4. Verifico compilación, pruebas y comportamiento disponible.
+5. Publico los cambios indicando claramente qué está listo y qué falta validar.
 
-## Criterios de diseño y calidad
+## Criterios del portafolio
 
-- Identidad visual coherente y diferenciada para cada producto.
+- Identidad visual consistente, con una personalidad propia para cada producto.
 - Diseño adaptable a móviles, tabletas y escritorio.
-- Navegación por teclado, estructura semántica y respeto a la preferencia de movimiento reducido.
-- Documentación visual: propósito, flujo de uso, tecnologías, requisitos y limitaciones.
-- Estados de proyecto transparentes: en desarrollo, probado o publicado según evidencia.
+- Navegación semántica, accesibilidad y respeto por la preferencia de movimiento reducido.
+- Casos de estudio que explican el propósito, la tecnología y el estado de cada proyecto.
+- Descripciones transparentes: no se anuncian como terminadas funciones que aún no han sido probadas.
 
 ## Desarrollo local
 
-Este portafolio es estático y no requiere instalar dependencias para visitarlo.
+El portafolio es un sitio estático. No necesitas instalar dependencias para visitarlo.
+
+Para servirlo localmente:
 
 ```bash
 python -m http.server 8000
@@ -60,7 +65,11 @@ Abre `http://localhost:8000`.
 - Correo: josemanuelfrancobrito11@gmail.com
 - WhatsApp: +1 (849) 252-9296
 
-El enlace de contacto abre una conversación para que la persona revise y envíe su mensaje. El sitio no almacena esos datos en una base de datos.
+Los enlaces de contacto permiten iniciar una conversación; el sitio no almacena esos datos en una base de datos.
+
+## Estado
+
+El portafolio se publica mediante GitHub Pages. BRIFAN TECH es un sitio web público y NEXUS PC CONTROL es una herramienta local para Windows. Los repositorios enlazados contienen sus propios requisitos, documentación y limitaciones.
 
 ## Licencia
 
