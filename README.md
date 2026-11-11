@@ -10,6 +10,14 @@
 
 </div>
 
+## Identidad y estructura visual
+
+![Mapa del ecosistema JOSEFRO](docs/visuals/project-map.svg)
+
+[Arquitectura del sitio](docs/ARCHITECTURE.md) · [Estructura del proyecto](docs/PROJECT-STRUCTURE.md) · [Registro de cambios](CHANGELOG.md)
+
+> El mapa es una ilustración conceptual del ecosistema, no una captura de pantalla del sitio publicado.
+
 ## Perfil
 
 Soy José Manuel Franco Brito y utilizo JOSEFRO para presentar proyectos personales, prácticas técnicas y experimentos de desarrollo. Me interesa construir herramientas útiles, documentar cómo funcionan y mejorar su calidad mediante pruebas e iteraciones.
