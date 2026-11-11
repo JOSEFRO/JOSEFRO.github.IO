@@ -33,6 +33,10 @@ JOSEFRO es el portafolio de José Manuel Franco Brito. Reúne proyectos personal
 - **Desarrollo web:** interfaces responsive, accesibilidad y experiencias interactivas.
 - **Automatización:** herramientas que simplifican tareas y presentan información útil.
 
+## Actualización visual 2026
+
+La rama `feat/josefro-violet-editorial-redesign` introduce una dirección editorial oscura con acentos violeta, fondos geométricos sutiles y ajustes de navegación, hero, botones y tarjetas. Conserva el logotipo y el contenido existentes. La hoja de estilos se ha actualizado en una propuesta de integración; todavía falta revisar visualmente GitHub Pages en escritorio y móvil. No se ha publicado este rediseño.
+
 ## Criterios de diseño y calidad
 
 - Identidad visual coherente y diferenciada para cada producto.
