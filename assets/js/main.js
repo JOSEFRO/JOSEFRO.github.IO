@@ -65,6 +65,17 @@
     // Keep the form values so the visitor can return from WhatsApp and edit the message if needed.
   });
 
+  const projectFilters = document.querySelectorAll("[data-project-filter]");
+  const projectCases = document.querySelectorAll("[data-project-category]");
+  projectFilters.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.projectFilter || "all";
+      projectFilters.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
+      projectCases.forEach(card => {
+        card.hidden = filter !== "all" && card.dataset.projectCategory !== filter;
+      });
+    });
+  });
   document.querySelectorAll(".service-visual img").forEach(img => {
     img.addEventListener("error", () => { img.style.display = "none"; }, { once: true });
   });
