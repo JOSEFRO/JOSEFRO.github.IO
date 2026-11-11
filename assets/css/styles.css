@@ -157,3 +157,18 @@ body:before{background:radial-gradient(ellipse at 82% 8%,rgba(139,92,246,.2),tra
 .project-card:hover,.solution-card:hover{border-color:rgba(190,145,255,.52);box-shadow:0 24px 70px rgba(83,38,140,.24)}
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline-color:#c49bff}
 @media(prefers-reduced-motion:reduce){.hero-robot .robot-orbit{animation:none}}
+
+
+/* Final violet accent pass: keep all interactive states on-brand */
+:root{--cyan:#c39aff;--blue:#8b5cf6;--violet:#dfc6ff;--green:#c39aff}
+a:hover,.text-link:hover,.card-link:hover{color:#dfc6ff}
+.eyebrow,.hero-role-label,.hero-scroll,.section-number,.service-number,.project-number{color:#c39aff}
+.service-icon,.project-icon,.step-number,.contact-icon{border-color:rgba(195,154,255,.38);color:#dfc6ff;background:linear-gradient(145deg,rgba(91,45,145,.42),rgba(18,12,29,.92))}
+.button-secondary:hover,.button-outline:hover,.nav-menu .nav-cta:hover{border-color:rgba(195,154,255,.72);box-shadow:0 0 26px rgba(139,92,246,.18)}
+.project-tags span,.profile-tags span,.tech-tag{border-color:rgba(195,154,255,.22);background:rgba(38,22,58,.52);color:#d5c4ec}
+.service-card:hover,.step:hover,.contact-card:hover{border-color:rgba(195,154,255,.48);box-shadow:0 20px 60px rgba(69,35,111,.22)}
+.project-image,.service-visual{background:linear-gradient(145deg,#25143b,#0c0913)}
+.project-image:after,.service-visual:after{background:linear-gradient(180deg,transparent 30%,rgba(7,6,13,.9) 100%),linear-gradient(90deg,rgba(35,17,56,.2),transparent)}
+.nexus-scroll-progress{background:linear-gradient(90deg,#8b5cf6,#d6b7ff);box-shadow:0 0 14px rgba(181,140,255,.55)}
+::selection{background:rgba(139,92,246,.42);color:#fff}
+@media(max-width:760px){.nav-menu{background:rgba(12,8,20,.98);border-color:rgba(195,154,255,.2)}}
