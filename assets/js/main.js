@@ -46,7 +46,7 @@
     if (!form.reportValidity()) return;
     const data = new FormData(form);
     const message = [
-      "Hola, NEXUS. Me gustaría conversar sobre un proyecto.",
+      "Hola, JOSEFRO. Me gustaría conversar sobre un proyecto.",
       "",
       "Nombre: " + String(data.get("name")).trim(),
       "Correo: " + String(data.get("email")).trim(),
