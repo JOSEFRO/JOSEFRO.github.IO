@@ -1,0 +1,73 @@
+name: Portfolio quality checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: node --check assets/js/main.js
+      - name: Validate HTML anchors and local assets
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          class Audit(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.ids = set()
+                  self.anchors = []
+                  self.assets = []
+                  self.errors = []
+
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  element_id = attrs.get("id")
+                  if element_id:
+                      if element_id in self.ids:
+                          self.errors.append(f"ID duplicado: {element_id}")
+                      self.ids.add(element_id)
+                  href = attrs.get("href", "")
+                  if href.startswith("#") and len(href) > 1:
+                      self.anchors.append(href[1:])
+                  if tag == "link" and attrs.get("rel") == "stylesheet":
+                      self.assets.append(attrs.get("href", ""))
+                  if tag == "script" and attrs.get("src"):
+                      self.assets.append(attrs["src"])
+
+          html = Path("index.html")
+          audit = Audit()
+          audit.feed(html.read_text(encoding="utf-8"))
+
+          for anchor in audit.anchors:
+              if anchor not in audit.ids:
+                  audit.errors.append(f"Destino interno inexistente: #{anchor}")
+
+          for asset in audit.assets:
+              parsed = urlparse(asset)
+              if parsed.scheme or asset.startswith("//"):
+                  continue
+              local_path = Path(parsed.path.lstrip("/"))
+              if not local_path.is_file():
+                  audit.errors.append(f"Recurso local inexistente: {asset}")
+
+          if audit.errors:
+              raise SystemExit("\\n".join(audit.errors))
+          print(f"HTML OK: {len(audit.ids)} IDs únicos, {len(audit.anchors)} enlaces internos y {len(audit.assets)} recursos locales.")
+          PY
