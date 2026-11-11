@@ -66,16 +66,61 @@
   });
 
   const projectFilters = document.querySelectorAll("[data-project-filter]");
-  const projectCases = document.querySelectorAll("[data-project-category]");
-  projectFilters.forEach(button => {
-    button.addEventListener("click", () => {
-      const filter = button.dataset.projectFilter || "all";
-      projectFilters.forEach(item => item.setAttribute("aria-pressed", String(item === button)));
-      projectCases.forEach(card => {
-        card.hidden = filter !== "all" && card.dataset.projectCategory !== filter;
-      });
+  const projectCases = [...document.querySelectorAll("[data-project-category]")];
+  const projectSearch = document.querySelector("#projectSearch");
+  const projectSort = document.querySelector("#projectSort");
+  const resultCount = document.querySelector("#projectResultCount");
+  let activeProjectFilter = new URLSearchParams(location.search).get("type") || "all";
+  function applyProjectFilters() {
+    const query = (projectSearch?.value || "").trim().toLocaleLowerCase("es-DO");
+    const visible = projectCases.filter(card => {
+      const categoryMatch = activeProjectFilter === "all" || card.dataset.projectCategory === activeProjectFilter;
+      const textMatch = !query || card.textContent.toLocaleLowerCase("es-DO").includes(query);
+      card.hidden = !(categoryMatch && textMatch);
+      return !card.hidden;
     });
+    if (projectSort?.value === "name") {
+      const grid = document.querySelector(".case-study-grid");
+      visible.sort((a,b) => a.querySelector("h3")?.textContent.localeCompare(b.querySelector("h3")?.textContent, "es"));
+      visible.forEach(card => grid?.append(card));
+    }
+    projectFilters.forEach(button => {
+      const selected = button.dataset.projectFilter === activeProjectFilter;
+      button.setAttribute("aria-pressed", String(selected));
+    });
+    if (resultCount) resultCount.textContent = "Mostrando " + visible.length + " de " + projectCases.length + " proyectos.";
+    const params = new URLSearchParams(location.search);
+    if (activeProjectFilter === "all") params.delete("type"); else params.set("type", activeProjectFilter);
+    const next = location.pathname + (params.toString() ? "?" + params.toString() : "") + location.hash;
+    history.replaceState(null, "", next);
+  }
+  projectFilters.forEach(button => button.addEventListener("click", () => {
+    activeProjectFilter = button.dataset.projectFilter || "all";
+    applyProjectFilters();
+  }));
+  projectSearch?.addEventListener("input", applyProjectFilters);
+  projectSort?.addEventListener("change", applyProjectFilters);
+  document.querySelector("#clearProjectFilters")?.addEventListener("click", () => {
+    activeProjectFilter = "all";
+    if (projectSearch) projectSearch.value = "";
+    if (projectSort) projectSort.value = "default";
+    applyProjectFilters();
   });
+  document.querySelector("#shareProjects")?.addEventListener("click", async event => {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      event.currentTarget.textContent = "Enlace copiado";
+    } catch { event.currentTarget.textContent = "Copia no disponible"; }
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "/" && !["INPUT","TEXTAREA","SELECT"].includes(document.activeElement?.tagName)) {
+      event.preventDefault(); projectSearch?.focus();
+    }
+    if (event.key === "Escape" && document.activeElement === projectSearch) {
+      projectSearch.value = ""; applyProjectFilters(); projectSearch.blur();
+    }
+  });
+  applyProjectFilters();
   document.querySelectorAll(".service-visual img").forEach(img => {
     img.addEventListener("error", () => { img.style.display = "none"; }, { once: true });
   });
