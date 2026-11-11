@@ -338,3 +338,5 @@ main{margin-left:0!important}
 @media(max-width:900px){.case-study-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.case-study-intro{align-items:start;flex-direction:column}}
 @media(max-width:600px){.case-study-grid{grid-template-columns:1fr}.case-study-visual{height:190px}.case-study-content p:not(.project-kicker){min-height:0}}
 @media(prefers-reduced-motion:reduce){.case-study,.case-study-content a span{transition:none}}
+
+.project-filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}.project-filters button{border:1px solid var(--line,rgba(255,255,255,.16));border-radius:999px;padding:9px 15px;background:rgba(255,255,255,.035);color:var(--text,#fff);font: .65rem var(--mono,monospace);letter-spacing:.05em;cursor:pointer;transition:background .2s,border-color .2s}.project-filters button[aria-pressed="true"]{background:rgba(160,110,255,.18);border-color:#a875ff;color:#d8c1ff}.project-filters button:focus-visible{outline:2px solid #b58cff;outline-offset:3px}.case-study[hidden]{display:none!important}
