@@ -302,3 +302,39 @@ main{margin-left:0!important}
 @media(max-width:900px){.site-header{position:sticky!important;height:auto!important}.nav.container{width:calc(100% - 36px)!important;height:70px!important}.nav-menu{display:none!important;position:absolute!important;top:70px!important;left:0!important;right:0!important;width:auto!important;padding:16px!important;background:#0b0912!important;border-bottom:1px solid var(--line)!important}.nav-menu.is-open{display:grid!important}.hero-stage{grid-template-columns:1fr!important;grid-template-rows:auto auto auto auto!important}.hero-main-feature{min-height:500px!important}.hero-side-dashboard{display:grid;grid-template-columns:1fr 1fr}.side-panel-heading,.side-project-note,.side-panel-footer{grid-column:1/-1}.side-project-note{margin-top:0}.hero-dashboard-strip{grid-template-columns:repeat(3,1fr)}.strip-mark{display:none}.project-grid{grid-template-columns:1fr 1fr!important}.project-card:first-child{grid-row:auto}.project-card:first-child .project-image{height:230px;min-height:0}}
 @media(max-width:560px){.container{width:calc(100% - 32px)!important}.hero-editorial{padding:18px 0 34px!important}.hero-topline{font-size:7px!important;letter-spacing:.1em!important}.hero-topline span:last-child{display:none}.hero-main-feature{min-height:510px!important;padding:26px 22px!important}.hero-feature-title{font-size:clamp(58px,17vw,86px)!important}.hero-feature-copy{font-size:12px!important}.hero-feature-tags{gap:5px;margin-top:28px}.hero-feature-tags span{font-size:7px;padding:7px}.hero-main-feature .hero-wordmark{font-size:56px!important}.hero-side-dashboard{display:flex;padding:14px}.side-project-card{grid-template-columns:74px minmax(0,1fr) 16px}.side-project-card img{width:74px;height:62px}.hero-dashboard-strip{grid-template-columns:1fr;gap:12px}.hero-dashboard-strip>div:not(.strip-mark){padding:8px 0;border-bottom:1px solid #ffffff0d}.project-grid{grid-template-columns:1fr!important}.project-card:first-child .project-image,.project-image{height:210px;min-height:0}}
 @media(prefers-reduced-motion:reduce){.side-project-card{transition:none!important}}
+
+/* Editorial case studies */
+.case-study-intro{display:flex;align-items:end;justify-content:space-between;gap:28px;margin:56px 0 20px;padding-top:22px;border-top:1px solid var(--line)}
+.case-study-intro p{max-width:520px;margin:0;color:var(--muted);font-size:.88rem}
+.case-study-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:0 0 38px}
+.case-study{min-width:0;overflow:hidden;border:1px solid var(--line);background:linear-gradient(155deg,#121c2a,#0a101a);transition:transform .25s,border-color .25s,box-shadow .25s}
+.case-study:hover{transform:translateY(-6px);border-color:#69e2e777;box-shadow:0 24px 55px #0005}
+.case-study-top{display:flex;justify-content:space-between;padding:13px 15px;color:#8fa4b9;font:.55rem var(--mono);letter-spacing:.12em;border-bottom:1px solid var(--line)}
+.case-study-visual{height:205px;position:relative;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#30455a,#111c2b 48%,#080d16)}
+.case-study-brifan .case-study-visual{background:radial-gradient(ellipse at 65% 35%,#526b2d,#182218 38%,#090e0b 80%)}
+.case-study-nexus .case-study-visual{background:radial-gradient(ellipse at 50% 40%,#47316c,#171326 50%,#0a0b14)}
+.case-orbit{position:absolute;width:190px;height:190px;border:1px solid #c9ff5b55;border-radius:50%;transform:rotate(-28deg) scaleY(.48);box-shadow:0 0 0 22px #c9ff5b0b,0 0 0 45px #c9ff5b08}
+.case-window{position:relative;z-index:1;width:76%;padding:18px;border:1px solid #c9ff5b66;background:linear-gradient(135deg,#101b12ef,#111711dd);box-shadow:0 16px 55px #0008;transform:rotate(-3deg)}
+.case-window span,.case-window small{display:block;color:#c9ff5b;font:.5rem var(--mono);letter-spacing:.13em}
+.case-window b{display:block;margin:18px 0;font:clamp(1.5rem,2.5vw,2.4rem)/.98 var(--display)}
+.nexus-screen{width:82%;padding:10px;border:1px solid #b7a0ff77;background:#100d1def;box-shadow:0 18px 60px #0009;transform:perspective(600px) rotateY(-9deg) rotateX(3deg)}
+.nexus-screen-head{display:flex;align-items:center;gap:5px;padding-bottom:9px;border-bottom:1px solid #b7a0ff33;color:#c5b2f5;font:.42rem var(--mono)}
+.nexus-screen-head i{width:5px;height:5px;border-radius:50%;background:#b7a0ff}.nexus-screen-head span{margin-left:6px}
+.nexus-screen-body{display:flex;align-items:center;gap:14px;padding:18px 8px}
+.nexus-screen-body b,.nexus-screen-body small{display:block;font:.52rem var(--mono);color:#e8dcff}.nexus-screen-body small{margin-top:6px;color:#a997c9;font-size:.42rem}
+.nexus-ring{width:72px;height:72px;flex:none;border-radius:50%;background:conic-gradient(#b7a0ff 0 68%,#302644 68%);position:relative}
+.nexus-ring:after{content:"68%";position:absolute;inset:8px;display:grid;place-items:center;border-radius:50%;background:#100d1d;color:#e8dcff;font:.75rem var(--mono)}
+.nexus-mini-bars{display:flex;align-items:end;gap:4px;height:26px;margin-top:9px}.nexus-mini-bars i{width:13px;background:linear-gradient(#b7a0ff,#5c4a87);height:45%}.nexus-mini-bars i:nth-child(2){height:80%}.nexus-mini-bars i:nth-child(3){height:58%}.nexus-mini-bars i:nth-child(4){height:95%}
+.case-study-portfolio .case-study-visual{background:radial-gradient(ellipse at 75% 20%,#225064,#0b1421 58%,#080b12)}
+.portfolio-type{position:relative;z-index:1;font:clamp(5rem,10vw,8rem)/.8 var(--display);letter-spacing:-.08em;color:#f4f7fc;text-shadow:0 0 35px #69e2e755}.portfolio-type span{color:var(--cyan)}
+.portfolio-type small{display:block;margin-top:16px;font:.5rem var(--mono);letter-spacing:.2em;color:var(--cyan)}
+.portfolio-grid-lines{position:absolute;inset:0;opacity:.35;background-image:linear-gradient(#69e2e722 1px,transparent 1px),linear-gradient(90deg,#69e2e722 1px,transparent 1px);background-size:24px 24px;mask-image:radial-gradient(ellipse,#000,transparent 78%)}
+.case-study-content{padding:20px}.case-study-content .project-kicker{font:.55rem var(--mono);letter-spacing:.1em;color:var(--cyan)}
+.case-study-brifan .case-study-content .project-kicker,.case-study-brifan .case-study-content a{color:#c9ff5b}
+.case-study-content h3{margin:10px 0;font:clamp(1.45rem,2.1vw,2rem)/1.02 var(--display);letter-spacing:.015em}
+.case-study-content p:not(.project-kicker){min-height:72px;color:var(--muted);font-size:.8rem;line-height:1.75}
+.case-study-content a{display:inline-flex;gap:12px;align-items:center;margin-top:12px;color:var(--cyan);font:.6rem var(--mono);letter-spacing:.07em;text-transform:uppercase}
+.case-study-content a span{font-size:1rem;transition:transform .2s}.case-study-content a:hover span{transform:translate(3px,-3px)}
+@media(max-width:900px){.case-study-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.case-study-intro{align-items:start;flex-direction:column}}
+@media(max-width:600px){.case-study-grid{grid-template-columns:1fr}.case-study-visual{height:190px}.case-study-content p:not(.project-kicker){min-height:0}}
+@media(prefers-reduced-motion:reduce){.case-study,.case-study-content a span{transition:none}}
