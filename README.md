@@ -30,6 +30,8 @@ Actualmente estudio Redes y Seguridad Informática en Loyola IEESL. Mi formació
 |---|---|---|
 | **BRIFAN TECH** | Plataforma web para explorar guías, recursos y publicaciones tecnológicas. Se utiliza desde el navegador; no requiere instalación. | [Abrir web](https://josefro.github.io/BRIFAN-TECH/) · [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
 | **NEXUS PC CONTROL** | Aplicación local para Windows que consulta recursos del sistema y analiza almacenamiento desde el propio equipo. | [Repositorio](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
+| **Siete Raíces — Universo Web** | Enciclopedia y universo original de fantasía y cultivo. Prototipo web en desarrollo; las ampliaciones siguen en revisión. | [Código](https://github.com/JOSEFRO/cultivation-universe-web) |
+| **Siete Raíces — Juego** | RPG de cultivo desarrollado con Godot 4. Prototipo inicial; las nuevas regiones y misiones están en una rama/PR sin publicar. | [Código](https://github.com/JOSEFRO/cultivation-universe-game) |
 | **JOSEFRO Portfolio** | Sitio personal que presenta proyectos, formación, áreas de práctica y vías de contacto. | [Abrir portafolio](https://josefro.github.io/) · [Código](https://github.com/JOSEFRO/JOSEFRO.github.IO) |
 
 ## Áreas de aprendizaje y construcción
