@@ -14,7 +14,7 @@
 
 ![Mapa del ecosistema JOSEFRO](docs/visuals/project-map.svg)
 
-[Arquitectura del sitio](docs/ARCHITECTURE.md) · [Estructura del proyecto](docs/PROJECT-STRUCTURE.md) · [Registro de cambios](CHANGELOG.md)
+[Arquitectura del sitio](docs/ARCHITECTURE.md) · [Estructura del proyecto](docs/PROJECT-STRUCTURE.md) · [Registro de cambios](CHANGELOG.md) · [Benchmark competitivo y plan de mejoras](docs/COMPETITIVE-BENCHMARK-2026-11.md)
 
 > El mapa es una ilustración conceptual del ecosistema, no una captura de pantalla del sitio publicado.
 
