@@ -4,8 +4,6 @@
 
 <img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
 
-<img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
-
 # JOSEFRO · Portafolio tecnológico
 
 **Desarrollo web · Redes y seguridad · Automatización · Herramientas digitales**
@@ -20,53 +18,57 @@
 
 [Arquitectura del sitio](docs/ARCHITECTURE.md) · [Estructura del proyecto](docs/PROJECT-STRUCTURE.md) · [Registro de cambios](CHANGELOG.md) · [Benchmark competitivo y plan de mejoras](docs/COMPETITIVE-BENCHMARK-2026-11.md)
 
-> El mapa es una ilustración conceptual del ecosistema, no una captura de pantalla del sitio publicado.
+> El arte de cabecera es conceptual. El mapa representa la estructura del ecosistema y no una captura del sitio publicado.
 
 ## Perfil
 
-Soy José Manuel Franco Brito y utilizo JOSEFRO para presentar proyectos personales, prácticas técnicas y experimentos de desarrollo. Me interesa construir herramientas útiles, documentar cómo funcionan y mejorar su calidad mediante pruebas e iteraciones.
+JOSEFRO es el espacio de presentación de proyectos personales, prácticas técnicas y experimentos de desarrollo. El objetivo es construir herramientas útiles, documentar sus decisiones y mejorar su calidad mediante pruebas e iteraciones.
 
-Actualmente estudio Redes y Seguridad Informática en Loyola IEESL. Mi formación complementaria confirmada incluye Redes Básicas de Canoa Academy y NSE 3. Este portafolio diferencia la formación en curso, los laboratorios personales y los productos que todavía están en desarrollo.
+Actualmente estudio Redes y Seguridad Informática en Loyola IEESL. Mi formación complementaria confirmada incluye Redes Básicas de Canoa Academy y NSE 3. El portafolio diferencia la formación en curso, los laboratorios personales y los productos que todavía están en desarrollo.
 
 ## Proyectos principales
 
-| Proyecto | Descripción | Acceso |
-|---|---|---|
-| **BRIFAN TECH** | Plataforma web para explorar guías, recursos y publicaciones tecnológicas. Se utiliza desde el navegador; no requiere instalación. | [Abrir web](https://josefro.github.io/BRIFAN-TECH/) · [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
-| **NEXUS PC CONTROL** | Aplicación local para Windows que consulta recursos del sistema y analiza almacenamiento desde el propio equipo. | [Repositorio](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
-| **Siete Raíces — Universo Web** | Enciclopedia y universo original de fantasía y cultivo. Prototipo web en desarrollo; las ampliaciones siguen en revisión. | [Código](https://github.com/JOSEFRO/cultivation-universe-web) |
-| **Siete Raíces — Juego** | RPG de cultivo desarrollado con Godot 4. Prototipo inicial; las nuevas regiones y misiones están en una rama/PR sin publicar. | [Código](https://github.com/JOSEFRO/cultivation-universe-game) |
-| **JOSEFRO Portfolio** | Sitio personal que presenta proyectos, formación, áreas de práctica y vías de contacto. | [Abrir portafolio](https://josefro.github.io/) · [Código](https://github.com/JOSEFRO/JOSEFRO.github.IO) |
+| Proyecto | Tipo | Descripción | Acceso |
+|---|---|---|---|
+| **BRIFAN TECH** | Plataforma web | Biblioteca de guías, recursos y publicaciones tecnológicas. Se utiliza desde el navegador; no requiere instalación. | [Abrir web](https://josefro.github.io/BRIFAN-TECH/) · [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
+| **NEXUS PC CONTROL** | Aplicación local Windows | Diagnóstico del sistema y análisis de almacenamiento desde el propio equipo. | [Repositorio](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
+| **Siete Raíces — Universo Web** | Web / enciclopedia | Portal de presentación, lore y universo original. No contiene el gameplay del RPG. | [Código](https://github.com/JOSEFRO/cultivation-universe-web) |
+| **Siete Raíces — Juego** | Videojuego Godot | RPG de cultivo en fase de prototipo y desarrollo. | [Código](https://github.com/JOSEFRO/cultivation-universe-game) |
+| **NETLAB AI** | Laboratorio de redes | Prototipo de asistente para prácticas, evidencias y conexión MCP con Packet Tracer. | [Código](https://github.com/JOSEFRO/NETLAB-AI) |
+| **JOSEFRO Portfolio** | Sitio personal | Presenta proyectos, formación, áreas de práctica y vías de contacto. | [Abrir portafolio](https://josefro.github.io/) |
 
-## Áreas de aprendizaje y construcción
+## Áreas de trabajo
 
 - **Redes y conectividad:** direccionamiento IP, VLAN, switching, topologías y laboratorios.
 - **Seguridad informática:** fundamentos, buenas prácticas y ejercicios en entornos propios o autorizados.
 - **Desarrollo web:** HTML, CSS, JavaScript, React y TypeScript.
-- **Automatización y sistemas:** scripts, diagnóstico local y presentación de datos.
-- **Inteligencia artificial:** exploración de herramientas y flujos asistidos por IA.
+- **Aplicaciones y automatización:** Python, diagnóstico local, integración de herramientas y presentación de datos.
+- **Videojuegos:** prototipos 3D, diseño de sistemas y desarrollo con Godot.
+- **Inteligencia artificial:** experimentación con herramientas y flujos asistidos por IA.
 
-## Cómo trabajo
+## Estándar de desarrollo
 
-1. Identifico un problema o una oportunidad de mejora.
-2. Investigo herramientas y alternativas técnicas.
-3. Construyo una versión funcional y documentada.
-4. Verifico compilación, pruebas y comportamiento disponible.
-5. Publico los cambios indicando claramente qué está listo y qué falta validar.
+1. Definir el problema, alcance y criterios de aceptación.
+2. Investigar alternativas y seleccionar tecnologías justificadas.
+3. Diseñar arquitectura, estructura y experiencia de usuario.
+4. Implementar por módulos pequeños y mantenibles.
+5. Añadir pruebas, validación de entradas, manejo de errores y documentación.
+6. Verificar compilación, comportamiento y compatibilidad antes de publicar.
+7. Documentar limitaciones y separar lo implementado de lo planificado.
 
-## Criterios del portafolio
+## Criterios de calidad
 
-- Identidad visual consistente, con una personalidad propia para cada producto.
+- Identidad visual consistente y propia para cada producto.
 - Diseño adaptable a móviles, tabletas y escritorio.
-- Navegación semántica, accesibilidad y respeto por la preferencia de movimiento reducido.
-- Casos de estudio que explican el propósito, la tecnología y el estado de cada proyecto.
-- Descripciones transparentes: no se anuncian como terminadas funciones que aún no han sido probadas.
+- Accesibilidad, navegación por teclado y respeto por movimiento reducido.
+- Seguridad por diseño: secretos fuera del código, permisos mínimos y validación en servidor cuando corresponda.
+- Pruebas automatizadas y revisión manual de flujos críticos.
+- Documentación clara para instalar, ejecutar, configurar y solucionar problemas.
+- Transparencia: no se anuncian como terminadas funciones que no han sido probadas.
 
 ## Desarrollo local
 
 El portafolio es un sitio estático. No necesitas instalar dependencias para visitarlo.
-
-Para servirlo localmente:
 
 ```bash
 python -m http.server 8000
@@ -79,11 +81,11 @@ Abre `http://localhost:8000`.
 - Correo: josemanuelfrancobrito11@gmail.com
 - WhatsApp: +1 (849) 252-9296
 
-Los enlaces de contacto permiten iniciar una conversación; el sitio no almacena esos datos en una base de datos.
+Los enlaces permiten iniciar una conversación; el sitio no almacena esos datos en una base de datos.
 
-## Estado
+## Estado y publicación
 
-El portafolio se publica mediante GitHub Pages. BRIFAN TECH es un sitio web público y NEXUS PC CONTROL es una herramienta local para Windows. Los repositorios enlazados contienen sus propios requisitos, documentación y limitaciones.
+El portafolio se publica mediante GitHub Pages. Cada proyecto enlazado mantiene su propio ciclo de desarrollo, requisitos, pruebas y limitaciones. La presencia de una imagen conceptual o de un repositorio público no significa que el producto esté terminado ni desplegado.
 
 ## Licencia
 
