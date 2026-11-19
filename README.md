@@ -1,5 +1,9 @@
 <div align="center">
 
+<img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141617_8c5ecb56-eb9f-4671-b3a1-591329e33625.webp" alt="Ilustración conceptual del ecosistema tecnológico JOSEFRO" width="100%">
+
+<img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
+
 <img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
 
 # JOSEFRO · Portafolio tecnológico
