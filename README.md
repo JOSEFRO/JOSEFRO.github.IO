@@ -1,92 +1,82 @@
 <div align="center">
 
-<img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141617_8c5ecb56-eb9f-4671-b3a1-591329e33625.webp" alt="Ilustración conceptual del ecosistema tecnológico JOSEFRO" width="100%">
+<img src="https://d8j0ntlcm91z4.cloudfront.net/user_3MJ8xX039ib9919oo3CFVd7NjMx/hf_20261119_141617_8c5ecb56-eb9f-4671-b3a1-591329e33625.webp" alt="Arte conceptual del ecosistema tecnológico JOSEFRO" width="100%">
 
-<img src="docs/visuals/josefro-brand.svg" alt="Identidad visual JOSEFRO" width="100%">
+# JOSEFRO | Portafolio tecnológico
 
-# JOSEFRO · Portafolio tecnológico
+**Desarrollo de software · Redes · Seguridad informática · Automatización**
 
-**Desarrollo web · Redes y seguridad · Automatización · Herramientas digitales**
+[🌐 Portafolio público](https://josefro.github.io/) · [GitHub](https://github.com/JOSEFRO) · [Contacto](mailto:josemanuelfrancobrito11@gmail.com)
 
-[🌐 Abrir portafolio](https://josefro.github.io/) · [📂 Explorar GitHub](https://github.com/JOSEFRO?tab=repositories) · [✉️ Contacto](mailto:josemanuelfrancobrito11@gmail.com)
+![Estado](https://img.shields.io/badge/estado-en%20evoluci%C3%B3n-blue)
+![Publicación](https://img.shields.io/badge/publicaci%C3%B3n-GitHub%20Pages-222222?logo=github)
+![Idioma](https://img.shields.io/badge/idioma-espa%C3%B1ol-orange)
 
 </div>
 
-## Identidad y estructura visual
+## 1. Descripción
 
-![Mapa del ecosistema JOSEFRO](docs/visuals/project-map.svg)
+JOSEFRO es un portafolio personal para presentar proyectos de software, laboratorios técnicos, formación y experimentos de ingeniería. Su propósito es documentar el trabajo de forma transparente y facilitar el acceso a cada producto.
 
-[Arquitectura del sitio](docs/ARCHITECTURE.md) · [Estructura del proyecto](docs/PROJECT-STRUCTURE.md) · [Registro de cambios](CHANGELOG.md) · [Benchmark competitivo y plan de mejoras](docs/COMPETITIVE-BENCHMARK-2026-11.md)
+El sitio es una web estática: puede visitarse desde un navegador y no requiere instalar una aplicación.
 
-> El arte de cabecera es conceptual. El mapa representa la estructura del ecosistema y no una captura del sitio publicado.
+## 2. Perfil técnico
 
-## Perfil
+Actualmente curso Redes y Seguridad Informática en Loyola IEESL. Mi formación complementaria confirmada incluye Redes Básicas de Canoa Academy y NSE 3. El portafolio distingue entre formación en curso, prácticas personales, prototipos y productos publicados.
 
-JOSEFRO es el espacio de presentación de proyectos personales, prácticas técnicas y experimentos de desarrollo. El objetivo es construir herramientas útiles, documentar sus decisiones y mejorar su calidad mediante pruebas e iteraciones.
+## 3. Ecosistema de proyectos
 
-Actualmente estudio Redes y Seguridad Informática en Loyola IEESL. Mi formación complementaria confirmada incluye Redes Básicas de Canoa Academy y NSE 3. El portafolio diferencia la formación en curso, los laboratorios personales y los productos que todavía están en desarrollo.
-
-## Proyectos principales
-
-| Proyecto | Tipo | Descripción | Acceso |
+| Proyecto | Tipo | Responsabilidad | Repositorio |
 |---|---|---|---|
-| **BRIFAN TECH** | Plataforma web | Biblioteca de guías, recursos y publicaciones tecnológicas. Se utiliza desde el navegador; no requiere instalación. | [Abrir web](https://josefro.github.io/BRIFAN-TECH/) · [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
-| **NEXUS PC CONTROL** | Aplicación local Windows | Diagnóstico del sistema y análisis de almacenamiento desde el propio equipo. | [Repositorio](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
-| **Siete Raíces — Universo Web** | Web / enciclopedia | Portal de presentación, lore y universo original. No contiene el gameplay del RPG. | [Código](https://github.com/JOSEFRO/cultivation-universe-web) |
-| **Siete Raíces — Juego** | Videojuego Godot | RPG de cultivo en fase de prototipo y desarrollo. | [Código](https://github.com/JOSEFRO/cultivation-universe-game) |
-| **NETLAB AI** | Laboratorio de redes | Prototipo de asistente para prácticas, evidencias y conexión MCP con Packet Tracer. | [Código](https://github.com/JOSEFRO/NETLAB-AI) |
-| **JOSEFRO Portfolio** | Sitio personal | Presenta proyectos, formación, áreas de práctica y vías de contacto. | [Abrir portafolio](https://josefro.github.io/) |
+| BRIFAN TECH | Plataforma web | Biblioteca y comunidad de contenido tecnológico | [Código](https://github.com/JOSEFRO/BRIFAN-TECH) |
+| NEXUS PC CONTROL | Aplicación local Windows | Diagnóstico del sistema y análisis de almacenamiento | [Código](https://github.com/JOSEFRO/NEXUS-PC-CONTROL) |
+| Siete Raíces — Portal | Sitio web | Presentación del universo, lore y novedades del videojuego | [Código](https://github.com/JOSEFRO/cultivation-universe-web) |
+| Siete Raíces — Juego | Videojuego Godot | Experiencia RPG jugable independiente del portal | [Código](https://github.com/JOSEFRO/cultivation-universe-game) |
+| NETLAB AI | Aplicación de laboratorio | Asistencia para prácticas de redes y automatización MCP | [Código](https://github.com/JOSEFRO/NETLAB-AI) |
 
-## Áreas de trabajo
+## 4. Áreas de trabajo
 
-- **Redes y conectividad:** direccionamiento IP, VLAN, switching, topologías y laboratorios.
-- **Seguridad informática:** fundamentos, buenas prácticas y ejercicios en entornos propios o autorizados.
-- **Desarrollo web:** HTML, CSS, JavaScript, React y TypeScript.
-- **Aplicaciones y automatización:** Python, diagnóstico local, integración de herramientas y presentación de datos.
-- **Videojuegos:** prototipos 3D, diseño de sistemas y desarrollo con Godot.
-- **Inteligencia artificial:** experimentación con herramientas y flujos asistidos por IA.
+- Desarrollo web: interfaces, aplicaciones React, TypeScript y APIs.
+- Redes: direccionamiento IP, VLAN, switching y laboratorios.
+- Seguridad informática: fundamentos, evaluación y prácticas en entornos autorizados.
+- Automatización: Python, integración de herramientas y procesamiento de información.
+- Videojuegos: prototipos y sistemas desarrollados con Godot.
+- Inteligencia artificial: experimentación con asistentes y flujos de trabajo.
 
-## Estándar de desarrollo
+## 5. Criterios de ingeniería
 
-1. Definir el problema, alcance y criterios de aceptación.
-2. Investigar alternativas y seleccionar tecnologías justificadas.
-3. Diseñar arquitectura, estructura y experiencia de usuario.
-4. Implementar por módulos pequeños y mantenibles.
-5. Añadir pruebas, validación de entradas, manejo de errores y documentación.
-6. Verificar compilación, comportamiento y compatibilidad antes de publicar.
-7. Documentar limitaciones y separar lo implementado de lo planificado.
+1. Definir alcance, requisitos y criterios de aceptación.
+2. Diseñar arquitectura y responsabilidades antes de implementar.
+3. Mantener módulos pequeños, legibles y con nombres consistentes.
+4. Validar entradas, controlar errores y aplicar permisos mínimos.
+5. Añadir pruebas automatizadas y comprobaciones manuales relevantes.
+6. Documentar instalación, configuración, ejecución y limitaciones.
+7. Verificar el artefacto y el despliegue antes de anunciar una versión.
 
-## Criterios de calidad
+## 6. Desarrollo local
 
-- Identidad visual consistente y propia para cada producto.
-- Diseño adaptable a móviles, tabletas y escritorio.
-- Accesibilidad, navegación por teclado y respeto por movimiento reducido.
-- Seguridad por diseño: secretos fuera del código, permisos mínimos y validación en servidor cuando corresponda.
-- Pruebas automatizadas y revisión manual de flujos críticos.
-- Documentación clara para instalar, ejecutar, configurar y solucionar problemas.
-- Transparencia: no se anuncian como terminadas funciones que no han sido probadas.
-
-## Desarrollo local
-
-El portafolio es un sitio estático. No necesitas instalar dependencias para visitarlo.
+El portafolio es estático. Para servir los archivos localmente:
 
 ```bash
 python -m http.server 8000
 ```
 
-Abre `http://localhost:8000`.
+Abre `http://localhost:8000` en el navegador.
 
-## Contacto
+## 7. Publicación
+
+- Sitio público: [https://josefro.github.io/](https://josefro.github.io/)
+- Rama de publicación: `main`
+- Plataforma: GitHub Pages.
+- Flujo: [Deploy workflow](.github/workflows/deploy.yml).
+
+El estado de GitHub Actions debe consultarse antes de considerar validada una publicación concreta.
+
+## 8. Contacto
 
 - Correo: josemanuelfrancobrito11@gmail.com
 - WhatsApp: +1 (849) 252-9296
 
-Los enlaces permiten iniciar una conversación; el sitio no almacena esos datos en una base de datos.
+## 9. Licencia y uso
 
-## Estado y publicación
-
-El portafolio se publica mediante GitHub Pages. Cada proyecto enlazado mantiene su propio ciclo de desarrollo, requisitos, pruebas y limitaciones. La presencia de una imagen conceptual o de un repositorio público no significa que el producto esté terminado ni desplegado.
-
-## Licencia
-
-No se ha añadido una licencia de reutilización. El código y los recursos permanecen reservados a su propietario salvo autorización expresa.
+No se ha incorporado una licencia de código abierto. La publicación del repositorio no concede por sí sola permisos de reutilización, distribución o modificación. Solicita autorización al titular antes de reutilizar el código o los recursos.
